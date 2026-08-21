@@ -1,0 +1,7 @@
+# Archivos generados por el programa
+hashes.json
+monitor.log
+
+# Archivos de Python
+__pycache__/
+*.pyc
