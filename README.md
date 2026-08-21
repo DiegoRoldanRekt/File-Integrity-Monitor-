@@ -1,19 +1,41 @@
-File Integrity Monitor desarrollado en Python
+# 🛡️ File Integrity Monitor
 
-Tecnologías:
-    hashlib
-    son
-    os
-    datetime
-    argparse
+> **Sistema de monitoreo de integridad de archivos desarrollado en Python.**
 
-Funcionalidades:
-- SHA-256
-- Detección de modificaciones
-- Detección de nuevos archivos
-- Detección de eliminaciones
-- Logging
-- Manejo de errores
+---
+
+## 🧰 Tecnologías
+
+- 🐍 **Python**
+- `hashlib` — Generación de hashes SHA-256
+- `json` — Almacenamiento de la línea base de hashes
+- `os` — Gestión y recorrido de archivos y directorios
+- `datetime` — Registro de fecha y hora de eventos
+- `argparse` — Gestión de argumentos desde la terminal
+
+---
+
+## ⚙️ Funcionalidades
+
+- 🔐 **Generación de hashes SHA-256**
+- ✏️ **Detección de archivos modificados**
+- ➕ **Detección de archivos nuevos**
+- 🗑️ **Detección de archivos eliminados**
+- 📝 **Sistema de logging**
+- ⚠️ **Manejo de errores**
+- 💾 **Persistencia de la línea base mediante JSON**
+- 📊 **Resumen de eventos detectados**
+
+---
+
+## 🔍 ¿Cómo funciona?
+
+El programa genera una **huella digital SHA-256** para cada archivo de la carpeta monitoreada.
+
+Estos hashes se almacenan como una línea base:
+
+```text
+Archivo → SHA-256
 
 Cómo ejecutar (En bash):
 1era forma ---- python proyecto.py archivos 
